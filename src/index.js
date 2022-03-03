@@ -30,7 +30,7 @@ app.use("/login" , login) ;
 app.use("/users", usersController);
 
 // Turning on the server and connection with db.
-app.listen(prcess.env.PORT || port ,async () =>{
+app.listen(process.env.PORT || port ,async () =>{
     try{
         await connect();
         console.log(`listening on port ${port}`)
